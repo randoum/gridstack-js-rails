@@ -411,7 +411,7 @@
                 handles: 'se'
             }),
             draggable: _.defaults(opts.draggable || {}, {
-                handle: opts.handle_class || (opts.handle ? '.' + opts.handle : '') || '.grid-stack-item-content',
+                handle: (opts.handle_class ? '.' + opts.handle_class : (opts.handle ? opts.handle : '')) || '.grid-stack-item-content',
                 scroll: false,
                 appendTo: 'body'
             })
